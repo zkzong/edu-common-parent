@@ -1,17 +1,17 @@
 package com.zkzong.web.boss.action;
 
+import com.zkzong.facade.user.entity.PmsUser;
+import com.zkzong.facade.user.enums.UserStatusEnum;
+import com.zkzong.facade.user.enums.UserTypeEnum;
+import com.zkzong.facade.user.service.PmsUserFacade;
+import com.zkzong.web.boss.base.BaseAction;
+import com.zkzong.web.common.constant.SessionConstant;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
-import com.zkzong.facade.user.entity.PmsUser;
-import com.zkzong.facade.user.enums.UserStatusEnum;
-import com.zkzong.facade.user.enums.UserTypeEnum;
-import com.zkzong.service.user.biz.PmsUserBiz;
-import com.zkzong.web.boss.base.BaseAction;
-import com.zkzong.web.common.constant.SessionConstant;
 
 import java.util.Date;
 
@@ -29,7 +29,7 @@ public class PmsLoginAction extends BaseAction {
 
 	private static final Log log = LogFactory.getLog(PmsLoginAction.class);
 	@Autowired
-	private PmsUserBiz pmsUserBiz;
+	private PmsUserFacade pmsUserFacade;
 
 
 	/**
@@ -57,7 +57,7 @@ public class PmsLoginAction extends BaseAction {
 				return "input";
 			}
 			this.putData("userNo", userNo);
-			PmsUser user = pmsUserBiz.findUserByUserNo(userNo);
+			PmsUser user = pmsUserFacade.findUserByUserNo(userNo);
 			if (user == null) {
 				log.warn("== no such user");
 				this.putData("userNoMsg", "用户名或密码不正确");
@@ -97,7 +97,7 @@ public class PmsLoginAction extends BaseAction {
 					// 更新登录数据
 					user.setLastLoginTime(new Date());
 					user.setPwdErrorCount(0); // 错误次数设为0
-					pmsUserBiz.update(user);
+					pmsUserFacade.update(user);
 
 				} catch (Exception e) {
 					this.putData("errorMsg", e.getMessage());
@@ -127,7 +127,7 @@ public class PmsLoginAction extends BaseAction {
 				} else {
 					msg += "<br/>密码错误，再输错【" + (SessionConstant.WEB_PWD_INPUT_ERROR_LIMIT - user.getPwdErrorCount().intValue()) + "】次将冻结帐号";
 				}
-				pmsUserBiz.update(user);
+				pmsUserFacade.update(user);
 				this.putData("userPwdMsg", msg);
 				return "input";
 			}

@@ -16,11 +16,11 @@
             <artifactId>edu-facade-user</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>com.zkzong.dubbo</groupId>
-            <artifactId>edu-service-user</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.zkzong.dubbo</groupId>-->
+            <!--<artifactId>edu-service-user</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.tomcat</groupId>

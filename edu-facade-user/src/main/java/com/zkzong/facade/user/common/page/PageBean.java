@@ -39,7 +39,7 @@ public class PageBean implements Serializable{
 	 * 只接受前4个必要的属性，会自动的计算出其他3个属生的值
 	 * 
 	 * @param currentPage
-	 * @param pageSize
+	 * @param numPerPage
 	 * @param totalCount
 	 * @param recordList
 	 */
