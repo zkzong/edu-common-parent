@@ -11,9 +11,75 @@
     <name>edu-web-boss Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-facade-user</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-service-user</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>servlet-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+
+        <!-- Struts2 Dependency Begin -->
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-json-plugin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-convention-plugin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-spring-plugin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts.xwork</groupId>
+            <artifactId>xwork-core</artifactId>
+        </dependency>
+        <!-- Struts2 Dependency End -->
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <classifier>jdk15</classifier>
+        </dependency>
     </dependencies>
     <build>
         <finalName>edu-web-boss</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 </project>
