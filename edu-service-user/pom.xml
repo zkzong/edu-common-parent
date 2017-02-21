@@ -81,6 +81,11 @@
             <artifactId>zkclient</artifactId>
         </dependency>
         <!-- Zookeeper 用于分布式服务管理 end -->
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <finalName>edu-service-user</finalName>
