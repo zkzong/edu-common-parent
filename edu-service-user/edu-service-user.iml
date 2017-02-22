@@ -48,5 +48,6 @@
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.101tec:zkclient:0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.7.3" level="project" />
   </component>
 </module>
