@@ -14,13 +14,8 @@
         <dependency>
             <groupId>com.zkzong.dubbo</groupId>
             <artifactId>edu-facade-user</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${edu-facade-user.version}</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>com.zkzong.dubbo</groupId>-->
-            <!--<artifactId>edu-service-user</artifactId>-->
-            <!--<version>1.0-SNAPSHOT</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.apache.tomcat</groupId>
@@ -63,10 +58,45 @@
         </dependency>
         <!-- Struts2 Dependency End -->
 
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-beans</artifactId>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+        </dependency>
+
+        <!-- Zookeeper 用于分布式服务管理 -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+        </dependency>
+        <!-- Zookeeper 用于分布式服务管理 end -->
+
         <dependency>
             <groupId>net.sf.json-lib</groupId>
             <artifactId>json-lib</artifactId>
             <classifier>jdk15</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
         </dependency>
     </dependencies>
     <build>
