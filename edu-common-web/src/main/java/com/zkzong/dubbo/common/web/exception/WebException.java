@@ -1,4 +1,4 @@
-package com.zkzong.dubbo.common.exception;
+package com.zkzong.dubbo.common.web.exception;
 
 import java.text.MessageFormat;
 import java.util.UUID;

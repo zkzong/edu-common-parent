@@ -23,6 +23,12 @@
             <version>${edu-common-config.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-common-core</artifactId>
+            <version>${edu-common-core.version}</version>
+        </dependency>
+
         <!-- MyBatis Dependency Begin -->
         <dependency>
             <groupId>org.mybatis</groupId>

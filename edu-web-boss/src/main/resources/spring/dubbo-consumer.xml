@@ -13,9 +13,6 @@
 	<!-- 使用zookeeper注册中心暴露服务地址 -->
 	<!-- 注册中心地址 -->
 	<dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" />
-
-	<!-- 读入配置属性文件 -->
-	<context:property-placeholder location="classpath:service.properties" />
 	
 	<!-- 用户服务接口 -->
 	<dubbo:reference interface="com.zkzong.facade.user.service.PmsUserFacade" id="pmsUserFacade" check="false" />
