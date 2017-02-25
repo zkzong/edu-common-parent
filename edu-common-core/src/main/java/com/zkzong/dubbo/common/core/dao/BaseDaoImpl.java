@@ -1,4 +1,4 @@
-package com.zkzong.service.user.common.core.dao;
+package com.zkzong.dubbo.common.core.dao;
 
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -6,10 +6,10 @@ import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.zkzong.facade.user.common.entity.BaseEntity;
-import com.zkzong.facade.user.common.exceptions.BizException;
-import com.zkzong.facade.user.common.page.PageBean;
-import com.zkzong.facade.user.common.page.PageParam;
+import com.zkzong.dubbo.common.entity.BaseEntity;
+import com.zkzong.dubbo.common.exceptions.BizException;
+import com.zkzong.dubbo.common.page.PageBean;
+import com.zkzong.dubbo.common.page.PageParam;
 
 import java.util.HashMap;
 import java.util.List;

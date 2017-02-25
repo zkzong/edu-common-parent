@@ -2,8 +2,8 @@ package com.zkzong.service.user.biz;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.zkzong.facade.user.common.page.PageBean;
-import com.zkzong.facade.user.common.page.PageParam;
+import com.zkzong.dubbo.common.page.PageBean;
+import com.zkzong.dubbo.common.page.PageParam;
 import com.zkzong.facade.user.entity.PmsUser;
 import com.zkzong.service.user.dao.PmsUserDao;
 

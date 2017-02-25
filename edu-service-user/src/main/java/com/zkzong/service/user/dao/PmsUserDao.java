@@ -2,7 +2,7 @@ package com.zkzong.service.user.dao;
 
 
 import com.zkzong.facade.user.entity.PmsUser;
-import com.zkzong.service.user.common.core.dao.BaseDao;
+import com.zkzong.dubbo.common.core.dao.BaseDao;
 
 /**
  * 

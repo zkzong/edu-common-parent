@@ -1,9 +1,9 @@
-package com.zkzong.service.user.common.core.dao;
+package com.zkzong.dubbo.common.core.dao;
 
+import com.zkzong.dubbo.common.page.PageBean;
+import com.zkzong.dubbo.common.page.PageParam;
 import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
-import com.zkzong.facade.user.common.page.PageBean;
-import com.zkzong.facade.user.common.page.PageParam;
 
 import java.util.List;
 import java.util.Map;

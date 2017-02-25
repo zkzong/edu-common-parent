@@ -1,7 +1,7 @@
 package com.zkzong.facade.user.service;
 
-import com.zkzong.facade.user.common.page.PageBean;
-import com.zkzong.facade.user.common.page.PageParam;
+import com.zkzong.dubbo.common.page.PageBean;
+import com.zkzong.dubbo.common.page.PageParam;
 import com.zkzong.facade.user.entity.PmsUser;
 
 import java.util.Map;

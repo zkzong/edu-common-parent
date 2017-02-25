@@ -1,4 +1,4 @@
-package com.zkzong.facade.user.common.exceptions;
+package com.zkzong.dubbo.common.exceptions;
 
 /**
  * 

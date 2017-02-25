@@ -14,7 +14,13 @@
         <dependency>
             <groupId>com.zkzong.dubbo</groupId>
             <artifactId>edu-facade-user</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${edu-facade-user.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-common-config</artifactId>
+            <version>${edu-common-config.version}</version>
         </dependency>
 
         <!-- MyBatis Dependency Begin -->

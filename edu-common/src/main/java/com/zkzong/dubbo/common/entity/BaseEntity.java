@@ -1,4 +1,4 @@
-package com.zkzong.facade.user.common.entity;
+package com.zkzong.dubbo.common.entity;
 
 import java.io.Serializable;
 import java.util.Date;

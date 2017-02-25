@@ -18,6 +18,10 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-common</artifactId>
+            <version>${edu-common.version}</version>
+        </dependency>
     </dependencies>
 </project>

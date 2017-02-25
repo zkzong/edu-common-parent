@@ -1,4 +1,4 @@
-package com.zkzong.web.common.constant;
+package com.zkzong.dubbo.common.web.constant;
 
 
 /**

@@ -1,11 +1,11 @@
 package com.zkzong.web.boss.action;
 
+import com.zkzong.dubbo.common.web.constant.SessionConstant;
 import com.zkzong.facade.user.entity.PmsUser;
 import com.zkzong.facade.user.enums.UserStatusEnum;
 import com.zkzong.facade.user.enums.UserTypeEnum;
 import com.zkzong.facade.user.service.PmsUserFacade;
 import com.zkzong.web.boss.base.BaseAction;
-import com.zkzong.web.common.constant.SessionConstant;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;

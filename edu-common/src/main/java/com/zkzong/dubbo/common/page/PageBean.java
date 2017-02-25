@@ -1,4 +1,4 @@
-package com.zkzong.facade.user.common.page;
+package com.zkzong.dubbo.common.page;
 
 import java.io.Serializable;
 import java.util.List;

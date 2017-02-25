@@ -18,6 +18,18 @@
         </dependency>
 
         <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-common-web</artifactId>
+            <version>${edu-common-web.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zkzong.dubbo</groupId>
+            <artifactId>edu-common-config</artifactId>
+            <version>${edu-common-config.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>servlet-api</artifactId>
         </dependency>

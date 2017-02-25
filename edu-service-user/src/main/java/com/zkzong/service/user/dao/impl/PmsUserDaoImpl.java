@@ -2,7 +2,7 @@ package com.zkzong.service.user.dao.impl;
 
 import org.springframework.stereotype.Repository;
 import com.zkzong.facade.user.entity.PmsUser;
-import com.zkzong.service.user.common.core.dao.BaseDaoImpl;
+import com.zkzong.dubbo.common.core.dao.BaseDaoImpl;
 import com.zkzong.service.user.dao.PmsUserDao;
 
 
