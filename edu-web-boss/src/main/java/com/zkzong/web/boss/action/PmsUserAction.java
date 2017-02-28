@@ -1,6 +1,6 @@
 package com.zkzong.web.boss.action;
 
-import com.zkzong.facade.user.common.page.PageBean;
+import com.zkzong.dubbo.common.page.PageBean;
 import com.zkzong.facade.user.entity.PmsUser;
 import com.zkzong.facade.user.enums.UserStatusEnum;
 import com.zkzong.facade.user.enums.UserTypeEnum;

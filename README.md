@@ -37,3 +37,22 @@ druid加密的版本和web中使用的版本要一致
 ```
 
 [http://www.cnblogs.com/digdeep/p/5268779.html](http://www.cnblogs.com/digdeep/p/5268779.html)
+
+## 使用Maven构建Dubbo服务的可执行jar包
+Dubbo服务的运行方式：
+1、使用Servlet容器运行（ Tomcat、 Jetty等） ----不可取
+缺点：增加复杂性（端口、管理）
+浪费资源（内存）
+2、自建Main方法类来运行（ Spring容器） ----不建议（本地调试可用）
+缺点： Dobbo本身提供的高级特性没用上
+自已编写启动类可能会有缺陷
+3、使用Dubbo框架提供的Main方法类来运行（ Spring容器） ----建议使用
+优点：框架本身提供（ com.alibaba.dubbo.container.Main）
+可实现优雅关机（ ShutdownHook）
+注意点：
+spring-context.xml
+`<import resource="classpath:spring/spring-xxx.xml" />`
+
+
+使用IDEA运行有问题，使用eclipse运行没问题
+DubboProvider

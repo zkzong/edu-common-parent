@@ -1,6 +1,6 @@
 package com.zkzong.facade.user.entity;
 
-import com.zkzong.facade.user.common.entity.BaseEntity;
+import com.zkzong.dubbo.common.entity.BaseEntity;
 
 import java.util.Date;
 

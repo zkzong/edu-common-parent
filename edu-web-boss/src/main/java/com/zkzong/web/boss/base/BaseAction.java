@@ -1,8 +1,8 @@
 package com.zkzong.web.boss.base;
 
+import com.zkzong.dubbo.common.web.constant.SessionConstant;
+import com.zkzong.dubbo.common.web.struts.Struts2ActionSupport;
 import com.zkzong.facade.user.entity.PmsUser;
-import com.zkzong.web.common.constant.SessionConstant;
-import com.zkzong.web.common.struts.Struts2ActionSupport;
 
 /**
  * 
