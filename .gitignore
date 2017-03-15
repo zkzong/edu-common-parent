@@ -31,3 +31,5 @@ hs_err_pid*
 # eclipse配置文件
 .project
 */.classpath
+*/.settings
+.settings
