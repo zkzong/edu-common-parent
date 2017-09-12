@@ -1,4 +1,5 @@
-# educommonparent
+# edu-common-parent
+[![Build Status](https://travis-ci.org/zongzhankui/edu-common-parent.svg?branch=master)](https://travis-ci.org/zongzhankui/edu-common-parent)
 
 ```
 <property name="filters" value="config" />
