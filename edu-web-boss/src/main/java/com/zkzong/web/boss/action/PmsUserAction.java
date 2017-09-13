@@ -291,7 +291,7 @@ public class PmsUserAction extends BaseAction {
 				return operateError("无法获取要操作的数据");
 			}
 
-			if (this.getLoginedUser().getId() == userId) {
+			if (this.getLoginedUser().getId().equals(userId)) {
 				return operateError("不能修改自己账户的状态");
 			}
 

@@ -31,17 +31,17 @@ public enum UserStatusEnum {
 		return value;
 	}
 
-	public void setValue(int value) {
-		this.value = value;
-	}
+//	public void setValue(int value) {
+//		this.value = value;
+//	}
 
 	public String getDesc() {
 		return desc;
 	}
 
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
+//	public void setDesc(String desc) {
+//		this.desc = desc;
+//	}
 	
 	public static UserStatusEnum getEnum(int value){
 		UserStatusEnum resultEnum = null;

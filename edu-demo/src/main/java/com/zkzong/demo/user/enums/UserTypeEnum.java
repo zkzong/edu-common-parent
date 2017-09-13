@@ -42,17 +42,17 @@ public enum UserTypeEnum {
 		return value;
 	}
 
-	public void setValue(String value) {
-		this.value = value;
-	}
+//	public void setValue(String value) {
+//		this.value = value;
+//	}
 
 	public String getDesc() {
 		return desc;
 	}
 
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
+//	public void setDesc(String desc) {
+//		this.desc = desc;
+//	}
 	
 	public static UserTypeEnum getEnum(String value){
 		UserTypeEnum resultEnum = null;
