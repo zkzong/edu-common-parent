@@ -110,7 +110,9 @@ public class Struts2ActionSupport extends ActionSupport {
 		} catch (IOException e) {
 			LOG.error(e);
 		} finally {
-			out.close();
+			if (out != null) {
+				out.close();
+			}
 		}
 	}
 
@@ -130,7 +132,9 @@ public class Struts2ActionSupport extends ActionSupport {
 		} catch (IOException e) {
 			LOG.error(e);
 		} finally {
-			out.close();
+			if (out != null) {
+				out.close();
+			}
 		}
 	}
 
@@ -217,11 +221,14 @@ public class Struts2ActionSupport extends ActionSupport {
 		try {
 			ServletActionContext.getResponse().setHeader("Content-type", "text/html;charset=UTF-8");
 			write = ServletActionContext.getResponse().getWriter();
+			write.write(msg);
 		} catch (IOException e) {
 			LOG.error(e);
+		} finally {
+			if (write != null) {
+				write.close();
+			}
 		}
-		write.write(msg);
-		write.close();
 	}
 
 	/**
@@ -361,7 +368,7 @@ public class Struts2ActionSupport extends ActionSupport {
 		String pageNumStr = getHttpRequest().getParameter("pageNum");
 		int pageNum = 1;
 		if (StringUtils.isNotBlank(pageNumStr)) {
-			pageNum = Integer.valueOf(pageNumStr);
+			pageNum = Integer.parseInt(pageNumStr);
 		}
 		return pageNum;
 	}
@@ -629,10 +636,10 @@ public class Struts2ActionSupport extends ActionSupport {
 				InetAddress inet = null;
 				try {
 					inet = InetAddress.getLocalHost();
+					ipAddress = inet.getHostAddress();
 				} catch (UnknownHostException e) {
 					e.printStackTrace();
 				}
-				ipAddress = inet.getHostAddress();
 			}
 
 		}

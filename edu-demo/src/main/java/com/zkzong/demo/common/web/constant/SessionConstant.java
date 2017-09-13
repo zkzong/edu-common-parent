@@ -29,6 +29,6 @@ public class SessionConstant {
 	/**
 	 * 用户密码连续输错次数限制(默认5).
 	 */
-	public static int WEB_PWD_INPUT_ERROR_LIMIT = 5;
+	public static final int WEB_PWD_INPUT_ERROR_LIMIT = 5;
 
 }
